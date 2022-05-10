@@ -7,5 +7,5 @@ We used Bootstrap 5 for the website.
 - Project manager: [Tatár Mátyás Bence]
 
 [Oláh Ádám]:[]
-[Szabó Dániel]:[github.com/Gold-dt]
-[Tatár Mátyás Bence]:[github.com/tatarmb4s/]
+[Szabó Dániel]:[https://github.com/Gold-dt]
+[Tatár Mátyás Bence]:[https://github.com/tatarmb4s/]
