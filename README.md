@@ -6,6 +6,6 @@ We used Bootstrap 5 for the website.
 - Designer: [Szabó Dániel]
 - Project manager: [Tatár Mátyás Bence]
 
-[Oláh Ádám]:[]
-[Szabó Dániel]:[https://github.com/Gold-dt]
-[Tatár Mátyás Bence]:[https://github.com/tatarmb4s/]
+[Oláh Ádám]: xyz.com
+[Szabó Dániel]: https://github.com/Gold-dt
+[Tatár Mátyás Bence]: https://github.com/tatarmb4s/
