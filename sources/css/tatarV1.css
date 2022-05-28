@@ -13,3 +13,22 @@ a:gomb {
     margin: 20px auto;
     text-align: center;
 }
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)) , url(../img/gtaHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    
+}
+
+.bg-white {
+    background-color: white;
+}
+.bg-dark2 {
+    background-color: #343a40;
+}
+.color-white {
+    color: white !important;
+}
