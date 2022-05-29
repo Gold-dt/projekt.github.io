@@ -40,6 +40,20 @@ h1:first-child {
     color: aqua;
 }
 
+.tmb:hover {
+    font-family: GeforceBold;
+    letter-spacing: 2px;
+    font-size: larger;
+    text-decoration: underline;
+    color: aqua;
+}
+
 .green {
+    color: greenyellow;
+}
+.green:hover {
+    font-family: GeforceBold;
+    letter-spacing: 2px;
+    font-size: larger;
     color: greenyellow;
 }
