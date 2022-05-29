@@ -25,7 +25,7 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="sources/img/logo.png" alt="Logo" width="30" height="30" class="rounded-3">
                 Játékok
             </a>
@@ -36,13 +36,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Főoldal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gta.html">GTA V</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="wow.html">World Of Warcraft</a>
+                        <a class="nav-link active" href="wow.html">World Of Warcraft</a>
                     </li>
                 </ul>
             </div>
@@ -50,9 +50,9 @@
     </nav>
     <header id="header" class="d-flex jumbotron opacity-0 align-items-center">
         <div class="text-center d-block m-auto">
-            <h1>Lorem ipsum dolor</h1>
+            <h1>World Of Warcraft</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. T
+                Egy játék, mely kikapcsol
             </p>
             <a name="" id="" class="btn btn-primary color-white" href="#main" role="button">Tovább</a>
         </div>
@@ -63,29 +63,6 @@
                 <img src="sources/img/logo.png" alt="img" class="img-thumbnail d-flex m-auto">
             </div>
             <div class="col-lg-8 col-12">
-                <h1>Lorem ipsum dolor</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim esse rerum similique, velit,
-                    porro iusto ea neque dolor architecto nisi error exercitationem maiores officia minima quos?
-                    Laborum, asperiores non.
-                    Illo hic aspernatur, earum, dolores dolor nulla et consectetur veniam magnam cupiditate officiis
-                    dignissimos sint assumenda tempore! Enim, tempore, fuga soluta ipsa ducimus deserunt ea architecto
-                    fugit rerum, maxime nesciunt?
-                    Impedit enim ipsum, tempore animi accusantium voluptas fugit, magnam corporis aliquam vero deleniti
-                    id iure? Deleniti illo voluptate et soluta sit, facilis magni repellat natus inventore ut libero ab
-                    molestias.
-                    Necessitatibus consequuntur optio laboriosam itaque autem? Corporis facilis dicta, accusamus sunt,
-                    corrupti odit dignissimos voluptas id beatae explicabo esse velit excepturi ipsam culpa laudantium!
-                    Commodi amet accusamus dolores at tempore.
-                    Delectus consequatur, expedita ex asperiores minus, harum ipsum aut architecto quam, cumque iure
-                    sapiente? Veniam quae deleniti officia explicabo tenetur, reiciendis in laudantium, ipsa totam ipsum
-                    adipisci accusamus, nihil consectetur.
-                </p>
-            </div>
-        </section>
-        <section class="row bg-dark2">
-            <div class="col-12 px-5 py-3">
                 <h2 class="text-center">Hogy mi is az a WoW?</h2>
                 <p class="text-justify">
                     A World of Warcraft (röviden WoW) a Blizzard Entertainment 2004-ben megjelent számítógépes játéka. A
@@ -98,9 +75,10 @@
                     fizetniük a játékra.
                 </p>
                 <p class="text-justify">
-                    Egy azonos történet szálon fut. Karaktered van mi a fejlődésének útja során a story alapján több
-                    hasznos segítőkészz karakterrel találkozik, akiknek szívességekért feladatokat old meg, így előrréb
-                    jutva a erősségi színtjében. Mikoözben fejlődik a karakterünk, meglátogatunk több világot illetve
+
+                    A játék során karaktereddel, egy történet részese vagy. A karakter egyik célja, hogy fejlődjön. Útja során több
+                    hasznos, és segítőkészz karakterrel találkozik, akiknek szívességekért feladatokat old meg, így előrréb
+                    jutv az erősségi színtjében. Miközben fejlődik a karakterünk, meglátogatunk több világot illetve
                     dimenziót, ahol veszélyes ellenségekkel kell szembe nézni. A játék célja, hogy egy főellenséget
                     győzzünk le. Ezután, habár a történetszál megszakad, a többi játékosnak tudunk segíteni, illetve
                     szabadon tevékenykedhetünk.
@@ -108,59 +86,86 @@
                 </p>
                 <h4>Miért játszak evvel a játékkal?</h4>
                 <ul>
-                    <li>Nagyon le tudja kötni az ember figyelmét, mert összetett</li>
-                    <li>Sok variációja van a karaktereknek, a statisztikéának, a felszerelésnek, így több féle képpen
+                    <li>Nagyon le tudja kötni az ember figyelmét, mert összetett.</li>
+                    <li>Sok variációja van a karaktereknek, a statisztikának, a felszerelésnek, így több féle képpen
                         lehet összetenni a karaktereket, így mindenki kiismerheti, hogy neki mi a legjobb.</li>
                     <li>A történetet magadnak kell összerakni, és gondolkodni kell benne, nem tolnak mindent eléd.
                         Olyasmi mint a kincsvadászat</li>
                 </ul>
             </div>
         </section>
-        <section class="row bg-dark2 ">
+        <section class="row bg-dark2 jumbotron">
             <div class="col">
                 <h1>
-
+                    Karakter osztályok
                 </h1>
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Kép</th>
-                            <th scope="col">Történet</th>
+                            <th scope="col">Osztály leírása</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tBodyClass">
+                        <!-- JavascriptAutofil -->
+                    </tbody>
+                </table>
+                <p>
+                    *1: Nem ajánlott kezdésre, mivel gyenge a védelme azért ha odaér az ellenfél a karakteredhez nagyon gyorsan megöli.
+                </p>
+            </div>
+        </section>
+        <section class="row bg-dark2 mt-4 jumbotron">
+            <div class="col">
+                <h1>
+                    Karakterek
+                </h1>
+                <h4>
+                    Allence oldalon harcoló karakterek
+                </h4>
+                <table class="table">
+                    <thead>
                         <tr>
-                            <th scope="row"><img src="sources/img/logo.png" alt="" class="img-fluid" width="170px"></th>
-                            <td>
-                                <h5>Név</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ullam atque ipsa
-                                    omnis
-                                    quod neque pariatur autem. Possimus aliquid ad nam, perspiciatis atque eius earum
-                                    omnis?
-                                    Nemo assumenda quia mollitia.
-                                </p>
-                            </td>
+                            <th scope="col">Kép</th>
+                            <th scope="col">Karakter leírása</th>
                         </tr>
+                    </thead>
+                    <tbody id="tBodyCharactersA">
+                        <!-- JavascriptAutofil -->
+                    </tbody>
+                </table>
+                <h4>
+                    Semleges
+                </h4>
+                <table class="table">
+                    <thead>
                         <tr>
-                            <th scope="row"><img src="sources/img/logo.png" alt="" class="img-fluid" width="170px"></th>
-                            <td>
-                                <h5>Név</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ullam atque ipsa
-                                    omnis
-                                    quod neque pariatur autem. Possimus aliquid ad nam, perspiciatis atque eius earum
-                                    omnis?
-                                    Nemo assumenda quia mollitia.
-                                </p>
-                            </td>
+                            <th scope="col">Kép</th>
+                            <th scope="col">Karakter leírása</th>
                         </tr>
+                    </thead>
+                    <tbody id="tBodyCharactersN">
+                        <!-- JavascriptAutofil -->
+                    </tbody>
+                </table>
+                <h4>
+                    Horde oldalon harcoló karakterek
+                </h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Kép</th>
+                            <th scope="col">Karakter leírása</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBodyCharactersH">
+                        <!-- JavascriptAutofil -->
                     </tbody>
                 </table>
             </div>
         </section>
         <section class="row bg-dark2 mt-2">
-            <div class="col-12 bg-dark2 px-5 py-3">
+            <div class="col-12 bg-dark2 px-5 py-3 jumbotron">
                 <h2 class="text-center">Galléria</h2>
                 <p class="text-justify">
                     Itt láthatóak a játékról a képek, videók, és egyebek
@@ -179,6 +184,138 @@
     </main>
     <script src="sources/js/bootstrap.js"></script>
     <script src="sources/js/tatar.js"></script>
+    <script>
+        var classok = [
+                {
+                    h5: "Warrior",
+                    p: `<strong> Ez egy könnyű közel harcos.</strong> Mivel közelharcos ézért kardal vagy törrel dolgozik a
+                    harctéren. Azért mert könnyű harcos nincs nagy páncélja és könnyű lecsapni.`,
+                    img: "Warrior.png"
+                },
+                {
+                    h5: "Paladin",
+                    p: `<strong>A Paladin nehéz harcosként van számmon tartva.</strong> A nehéz harcos tulajdonsága, hogy
+                    nehéz páncélal és nehéz fegyve járja a világot.`,
+                    img: "Paladin.png"
+                },
+                {
+                    h5: "Hunter",
+                    p: `<strong>A Hunter egy nagyon erős távolsági.</strong> Nevéből adódó az hogy távilságinak számít.
+                    Majdnem minden távolsági Class kis szinten életképtelen. *1`,
+                    img: "Hunter.png"
+                },
+                {
+                    h5: "Rogue",
+                    p: `<strong>A Rogue magyarul zsebtolvaj.</strong> Inkább törrel harcol nem kardal. Kevés HP-ja van és
+                    gyorsan meghal.`,
+                    img: "Rogue.png"
+                },
+                {
+                    h5: "Mage",
+                    p: `<strong>A Mage egy gyengébb távolsági mint a Warlock.</strong> Ez nagyon nehéz kezdést ad a
+                    játékosnak. *1`,
+                    img: "Mage.png"
+                },
+                {
+                    h5: "Warlock",
+                    p: `<strong>A Warlock gyengébb távolsági mint a Hunter.</strong> Ez a karakter egy fokkal jobb mint a Mage. *1`,
+                    img: "Warlock.png"
+                },
+            ]
+        var karakterek = {
+            allence: [
+                {
+                    h5: "Human",
+                    p: `Elwyn Forest a kezdő helye. Erdős füves terület az emberek fővárosa Stormwing.`,
+                    img: "Human.png"
+                },
+                {
+                    h5: "Dwarf",
+                    p: `Teldrassil a kezdőhelye, havas hegyes terület, több falu si található ott.`,
+                    img: "Dwarf.png"
+                },
+                {
+                    h5: "Night Elf",
+                    p: `Dun Morogh , az ösidők óta álló Night elf kezdőhelye egy nagy fa törzsében van.`,
+                    img: "Night Elf.png"
+                },
+                {
+                    h5: "Gnome",
+                    p: `Gnomeregan , Khaz Modan hatalmas hegyeinek egyik vonulatánál, Dun Morogh északkeleti lábánál alapított modern techno-metropolisuk mélyén található Train Depot területén kezdenek.`,
+                    img: "Gnome.png"
+                },
+                {
+                    h5: "Draenei",
+                    p: `Exodar draenei-ei (magyarul talán: "drenáj") a Kalimdor északkeleti partjaitól messze fekvő Azuremyst Isle-n található Ammen Vale területén kezdenek.`,
+                    img: "Draenei.png"
+                },
+                {
+                    h5: "Worgen",
+                    p: `Gilneas worgenjei Eastern Kingdoms északi szegletén, Lordaeron területén található Gilneas félszigetének központjában fekvő Gilneas City-ben kezdenek.`,
+                    img: "Worgen.png"
+                },
+            ],
+            horde: [
+                {
+                        h5: "Ork",
+                        p: `Durotar az Ork karekter kezdőhelye. Kopár sziklás sivatagos terep. Orgrimmar is ott található mellete.`,
+                        img: "Ork.png"
+                },
+                {
+                        h5: "Undead",
+                        p: `Tirisfal Glades az Undead karekter kezdőhelye. Erdős füve sterület néhol megégetve.`,
+                        img: "Undead.png"
+                },
+                {
+                        h5: "Tauren",
+                        p: `Durotar a Troll karekter kezdőhelye is. Kopár sziklás sivatagos terep. Orgrimmar is ott található mellete.`,
+                        img: "Tauren.png"
+                },
+                {
+                        h5: "Troll",
+                        p: `Mulgore a Tauren karekter kezdőhelye. Hangulatos rétek zónája.`,
+                        img: "Troll.png"
+                },
+                {
+                        h5: "Blood Elf",
+                        p: `Silverpine Forest a Blood Elf karekter kezdőhelye. Hangulatos rétek zónája.`,
+                        img: "Blood Elf.png"
+                },
+                {
+                        h5: "Goblin",
+                        p: `Kezan a Goblin karekter kezdőhelye. Egy sziget ami televan gyárakkal.`,
+                        img: "Goblin.png"
+                },
+            ],
+            semleges: [
+                {
+                        h5: "Pandaren",
+                        p: `A Pandaren karkter elősször egy Teknős hátán úszó városban kezdi a játékot. Utána át teleportál Pandaria-ba.`,
+                        img: "Pandaren.png"
+                },
+            ]
+        }
+        function fillTable(tbodyID, data, imgUrl) {
+            const tBodySelected = document.querySelector(("#"+tbodyID))
+            for (let i = 0; i < data.length; i++) {
+                const e = data[i];
+                //console.log(e)
+                tBodySelected.innerHTML += `
+                    <tr>
+                        <th scope="row"><img src="${imgUrl+e.img}" alt="" class="img-fluid" width="170px"></th>
+                        <td>
+                            <h5>${e.h5}</h5>
+                            <p>${e.p}</p>
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+        fillTable("tBodyClass", classok, "sources/img/wow/class/");
+        fillTable("tBodyCharactersA", karakterek.allence, "sources/img/wow/class/Alliance/");
+        fillTable("tBodyCharactersN", karakterek.semleges, "sources/img/wow/class/semleges/");
+        fillTable("tBodyCharactersH", karakterek.horde, "sources/img/wow/class/horde/");
+    </script>
 </body>
 
 </html>
