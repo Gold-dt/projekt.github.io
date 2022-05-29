@@ -231,60 +231,74 @@
                 <p class="text-justify">
                     Itt láthatóak a játékról a képek, videók, és egyebek
                 </p>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <iframe class="img-fluid"
-                                src="https://www.youtube.com/embed/Suu5dTLKjoM">
-                            </iframe>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp1.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp2.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp3.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp4.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp5.webp" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp6.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp7.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6">
-                            <div class="d-block">
-                                <img src="sources/img/gta/gallery/wpp8.jpg" alt="img" class="img-thumbnail">
-                            </div>
-                        </div>
-                    </div>
+                <div class="container" id="gallery">
+
                 </div>
             </div>
         </section>
     </main>
     <script src="sources/js/bootstrap.js"></script>
     <script src="sources/js/tatar.js"></script>
+    <script>
+        let reached = false;
+        window.addEventListener("scroll", event => {
+            var top  = window.pageYOffset || document.documentElement.scrollTop
+            if (top > 1500 && !reached) {
+                makeGallery();
+                reached = true
+            }
+        }, { passive: true });
+        function makeGallery() {
+            const gallery = document.querySelector("#gallery");
+            gallery.innerHTML = `<div class="row">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <iframe class="img-fluid"
+                        src="https://www.youtube.com/embed/Suu5dTLKjoM">
+                    </iframe>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp1.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp2.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp3.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp4.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp5.webp" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp6.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp7.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="d-block">
+                        <img src="sources/img/gta/gallery/wpp8.jpg" alt="img" class="img-thumbnail">
+                    </div>
+                </div>
+            </div>`;
+        }
+    </script>
     <script>
         function fillTable(tbodyID, data, imgUrl) {
             const tBodySelected = document.querySelector(("#"+tbodyID))

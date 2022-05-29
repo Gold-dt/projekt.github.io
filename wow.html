@@ -170,8 +170,26 @@
                 <p class="text-justify">
                     Itt láthatóak a játékról a képek, videók, és egyebek
                 </p>
-                <div class="container">
-                    <div class="row">
+                <div class="container" id="gallery">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="sources/js/tatar.js"></script>
+    <script>
+        let reached = false;
+        window.addEventListener("scroll", event => {
+            var top  = window.pageYOffset || document.documentElement.scrollTop
+            if (top > 1500 && !reached) {
+                makeGallery();
+                reached = true
+                window.removeEventListener("scroll");
+            }
+        }, { passive: true });
+        function makeGallery() {
+            const gallery = document.querySelector("#gallery");
+            gallery.innerHTML = `<div class="row">
                         <div class="col-12 col-md-12 col-lg-6">
                             <div class="d-block">
                                 <img src="sources/img/wow/gallery/gp1.jpg" alt="img" class="img-thumbnail">
@@ -192,13 +210,10 @@
                                 <img src="sources/img/wow/gallery/wpp1.jpg" alt="img" class="img-thumbnail">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+                    </div>`;
+        }
+    </script>
     <script src="sources/js/bootstrap.js"></script>
-    <script src="sources/js/tatar.js"></script>
     <script>
         var classok = [
                 {
