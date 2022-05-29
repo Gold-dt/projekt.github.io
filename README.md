@@ -5,8 +5,10 @@ We used our custom made Bootstrap 5 for the website.
 - Writer: [Oláh Ádám], [Szabó Dániel]
 - Project manager and Designer: [Tatár Mátyás Bence]
 
-#####Trello board
+##### Trello board
 https://trello.com/b/cIcBMn86/5-projekt
+##### Very basic design plan
+https://www.figma.com/file/dFVwDJjDEX9cUbP7b8AabW/Video-Games?node-id=0%3A1
 
 [Oláh Ádám]: xyz.com
 [Szabó Dániel]: https://github.com/Gold-dt
