@@ -1,10 +1,12 @@
 # Games 5. Project
 In this project, we will show you some games, which we like.
-We used Bootstrap 5 for the website.
+We used our custom made Bootstrap 5 for the website.
 #### Contributors:
-- Writer: [Oláh Ádám]
-- Designer: [Szabó Dániel]
-- Project manager: [Tatár Mátyás Bence]
+- Writer: [Oláh Ádám], [Szabó Dániel]
+- Project manager and Designer: [Tatár Mátyás Bence]
+
+#####Trello board
+https://trello.com/b/cIcBMn86/5-projekt
 
 [Oláh Ádám]: xyz.com
 [Szabó Dániel]: https://github.com/Gold-dt
