@@ -9,6 +9,8 @@ We used our custom made Bootstrap 5 for the website.
 https://trello.com/b/cIcBMn86/5-projekt
 ##### Very basic design plan
 https://www.figma.com/file/dFVwDJjDEX9cUbP7b8AabW/Video-Games?node-id=0%3A1
+##### GitHub link
+https://github.com/Gold-dt/projekt.github.io
 
 
 [Oláh Ádám]: xyz.com
